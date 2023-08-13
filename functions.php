@@ -173,7 +173,7 @@ function makeNotePrivate($data, $postarr) {
 }
 
 // Enable logging of PHP variables to the browser console
-// To log a variable: console_log($variable_to_be_logged);
+// To log a variable (within PHP): console_log($variable_to_be_logged);
 function console_log($output, $with_script_tags = true) {
   $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . 
 ');';
