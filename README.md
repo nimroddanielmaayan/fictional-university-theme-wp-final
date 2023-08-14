@@ -5,4 +5,6 @@
 - Custom post types
 - Custom fields
 - Google Maps API
+- REST API
+- Custom search
 -
