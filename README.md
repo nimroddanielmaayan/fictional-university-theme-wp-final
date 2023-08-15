@@ -5,6 +5,7 @@
 - Custom post types
 - Custom fields
 - Google Maps API
-- REST API
+- REST API manipulation
 - Custom search
--
+- Custom user roles
+- User registration
