@@ -4,5 +4,6 @@
 /images
 /css
 .DS_Store
+notes.md
 desktop.ini
 secrets.txt

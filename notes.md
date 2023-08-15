@@ -3,7 +3,7 @@
 ## General Notes
 
 - This project's course:
-https://www.udemy.com/course/become-a-wordpress-developer-php-javascript
+  https://www.udemy.com/course/become-a-wordpress-developer-php-javascript
 
 - Important online WP PHP resources:
 
@@ -410,6 +410,6 @@ console_log($variable_to_be_logged);
 - The is_user_logged_in() function is used to create custom logic for signed
   in\not signed in users, like displaying a log in\log out button.
 
-# User Generated Content - CRUD Applications in WordPress
+## User Generated Content - CRUD Applications in WordPress
 
 -
