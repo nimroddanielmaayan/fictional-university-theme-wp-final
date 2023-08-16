@@ -9,3 +9,4 @@
 - Custom search
 - Custom user roles
 - User registration
+- User profiles
