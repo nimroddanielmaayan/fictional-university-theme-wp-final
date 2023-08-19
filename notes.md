@@ -412,4 +412,4 @@ console_log($variable_to_be_logged);
 
 ## User Generated Content - CRUD Applications in WordPress
 
--
+- Updates...
