@@ -412,4 +412,77 @@ console_log($variable_to_be_logged);
 
 ## User Generated Content - CRUD Applications in WordPress
 
-- Updates...
+- The subject of nonce (number once) in WP is important - it's a way of
+  authenticating users, and it's used in many places in WP. It's important to be
+  aware of it.
+
+- CSS data attributes are an important subject in front end and in WP
+  specifically. They are used to store data in HTML elements, and they are very
+  useful for JS manipulation.
+
+- WP native private posts: It's possible to create private posts in WP, and to
+  make them visible only to the author and to admins. This is done using the
+  "Visibility" section in the post editor, and it's very useful for creating
+  private posts that are only visible to the author (unlike public data, like
+  blog posts).
+
+- The PHP "die" function: This is a function that allows us to stop the
+  execution of a PHP script. It's useful for debugging purposes and for limiting
+  user actions.
+
+## Deploying a WP Site from Local to Production
+
+- One option is using the All-in-One WP Migration plugin. Another is using Git,
+  in which case we can use the WP Migrate DB plugin to migrate the database
+  (remember to find and replace to the new URL), and
+
+- It's possible to set up the WP DB constants to work on both local and
+  production environments, using an if-else statement. This is a good practice,
+  but it's not mandatory.
+
+- WP repos must always be private, because they contain sensitive data like the
+  DB password.
+
+- It's wise to use a .gitignore file to ignore the node_modules folder, and
+  other folders that are not needed in the repo (like a folder that contains
+  large backup files that All-in-One WP Migration creates).
+
+- deployhq.com is a good option for deploying WP sites automatically after every
+  Git push. There are other options as well.
+
+## Plugin Development
+
+- The "Plugin Handbook" is a good resource for plugin development:
+  https://developer.wordpress.org/plugins/
+
+- To create a plugin, simply add a new folder to the plugins folder, and add a
+  PHP file to it. The PHP file should be named the same as the folder, and it
+  has to have the .php extention.
+
+- Every should start with a comment section with the plugin's name, description,
+  author, version, and other details. This is a good practice, but it's not
+  mandatory.
+
+- To add a plugin admin menu, use the add_menu_page() function. This function
+  takes 7 parameters: The page title, the menu title, the capability, the menu
+  slug, the function that will render the page, the icon URL, and the position
+  in the menu. The function has to be used in the main plugin file.
+
+- The plugin settings screen is actually regular HTML, and it's rendered using
+  the function that we pass to the add_menu_page() function. It's possible to
+  use any HTML, CSS, and JS that we want in the settings screen.
+
+- Inside the WP databse, the wp_options table contains all of the options for
+  all of the plugins. It's possible to add options to this table using the
+  add_option() function, and to get options from this table using the
+  get_option() function. Both functions take 3 parameters: The name of the
+  option, the value of the option, and an optional parameter for the autoload
+  value. The functions have to be used in the main plugin file.
+
+- The esc_html function is a function that sanitizes HTML. It's important to use
+  it when rendering HTML that comes from the database, in order to prevent
+  malicious code from being executed.
+
+- Using React.js in WP: To start, use NPM to install the @wordpress/scripts
+  package, and then use the npm start command to start the build process (if npm
+  start is not already set up, then add it to the package.json file).
